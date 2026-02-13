@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #071a3a, #020816);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+
+/* MAIN WRAPPER */
+.app {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.card {
+  background: #0e1f3f;
+  width: 100%;
+  max-width: 720px;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ALL SCREENS */
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+/* HEADINGS */
+h1, h2 {
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* TEXT */
+p {
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+button:hover {
+  background: #1877d6;
+}
+
+/* ANSWERS */
+#answers {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#answers button {
+  background: #162e5c;
+  text-align: center;
+}
+
+/* FEEDBACK COLORS */
+#answers button.correct {
+  background: #1f7a4a;
+}
+
+#answers button.wrong {
+  background: #8b2e2e;
+}
+
+/* EXPLANATION */
+#explanation {
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  max-width: 500px;
+}
+
+/* FINAL MESSAGE */
+.final-message {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* HIDE */
+.hidden {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .card {
+    padding: 1.8rem;
+  }
+}

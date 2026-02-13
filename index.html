@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="app">
+  <section class="card">
+
+    <!-- START SCREEN -->
+    <section id="start-screen" class="screen">
+      <h1>WEB DEVELOPMENT QUIZ</h1>
+      <p>Test your knowledge of modern web technologies.</p>
+
+      <input type="text" id="username" placeholder="ENTER YOUR NAME" />
+      <button id="start-btn">START QUIZ</button>
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="quiz-screen" class="screen hidden">
+      <h2 id="question"></h2>
+
+      <div id="answers"></div>
+
+      <p id="explanation" class="hidden"></p>
+
+      <button id="next-btn" class="hidden">NEXT QUESTION</button>
+    </section>
+
+    <!-- RESULT SCREEN -->
+    <section id="result-screen" class="screen hidden">
+      <h2>QUIZ COMPLETED</h2>
+
+      <p id="score-text"></p>
+
+      <p class="final-message">
+        THANK YOU FOR TAKING THE QUIZ
+      </p>
+
+      <button id="restart-btn">RESTART QUIZ</button>
+    </section>
+
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
